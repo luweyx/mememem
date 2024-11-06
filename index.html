@@ -1,34 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="./style/css/styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">**** ,будешь моей валентинкой? ехе</h1>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Газобетон: Стройте с умом!</title>
+    <link rel="stylesheet" href="../../../Documents/Сайт без имени 3/style.css">
+</head>
+<body>
+	<script src="javaScrept.js"></script>
+    <header>
+		<style>	nav {
+  position: fixed; /* Зафиксируем панель навигации */
+  top: 0;        /* Позиционируем наверх */
+  width: 100%; /* Занимаем всю ширину экрана */
+  background-color: #f0f0f0; /* Фон панели */
+  padding: 10px; /* Отступы */
+  z-index: 10;   /* Увеличиваем приоритет, чтобы панель была выше содержимого */
+}
+			</style>    </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./главная.html">Главная</a></li>
+                <li><a href="о газобетоне.html">О газобетоне</a></li>
+                <li><a href="применение.html">Применение</a></li>
+                <li><a href="наши работы.html">Наши работы</a></li>
+                <li><a href="контакты.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page">
+            <!-- Контент главной страницы -->
+             <center><h1>Газобетон: Стройте с умом!</h1> </center>
+           <center>  <p>Краткое описание газобетона и его преимуществ</p> </center>
+           <center>  <img src="https://angary.pro/upload/iblock/85d/85d074eae748146f6039af4e14c331b1.jpg" alt="Газобетон">  </center>
+            <a href="о газобетоне.html" class="button">Узнать больше</a>
+        </section>
+
+        <section id="about" class="page">
+            <!-- Контент страницы "О газобетоне" -->
+            <center> <h2>Что такое газобетон?</h2> </center>
+            <p>Подробное описание свойств газобетона: прочность, теплоизоляция, звукоизоляция, экологичность, огнестойкость.</p>
+			<p>Газобетон - это современный строительный материал, который быстро набирает популярность. Он представляет собой пористый бетон, получаемый путем смешивания цемента, песка, воды и газообразователя. 
+
+Во время производства газообразователь создает множество мелких пор, которые делают газобетон легким и теплоизоляционным. Благодаря этому, он отлично подходит для строительства домов, как многоэтажных, так и одноэтажных.
+</p>
+            <table>
+                <!-- Таблица с техническими характеристиками -->
+            </table>
+        </section>
+
+        <section id="application" class="page">
+            <!-- Контент страницы "Применение" -->
+           <center>  <h2>Газобетон в действии!</h2> </center>
+            <!-- Разделы с применением газобетона -->
+			
+            <video src="https://video-preview.s3.yandex.net/GIS9TQIAAAA.mp4" controls></video>
+        </section>
+
+        <section id="works" class="page">
+          
+           <center>  <h2>Наши реализованные проекты</h2> </center>
+            <div class="gallery">
+				 <img src="https://mbn-market.ru/upload/iblock/b8f/i2ja8y1yic2qgakzbdq144y2d020yn68.jpg" alt="Изображение 1">
+				 <img src="https://mbn-market.ru/upload/iblock/b8f/i2ja8y1yic2qgakzbdq144y2d020yn68.jpg" alt="Изображение 1">
+				 <img src="https://mbn-market.ru/upload/iblock/b8f/i2ja8y1yic2qgakzbdq144y2d020yn68.jpg" alt="Изображение 1">
+				 <img src="https://mbn-market.ru/upload/iblock/b8f/i2ja8y1yic2qgakzbdq144y2d020yn68.jpg" alt="Изображение 1">
+				 <img src="https://mbn-market.ru/upload/iblock/b8f/i2ja8y1yic2qgakzbdq144y2d020yn68.jpg" alt="Изображение 1">
             </div>
-            <div class="gif_container">
-                <img src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="Cute animated illustration">
-            </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">КОНЕЧНО ДА</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()">Нет</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
-            </div>
-        </div>
-       
-    </body> 
+        </section>
+
+        <section id="contact" class="page">
+            <!-- Контент страницы "Контакты" -->
+            <center> <h2>Свяжитесь с нами</h2> </center>
+            <form action="#">
+                <!-- Форма обратной связи -->
+            </form>
+          <center>   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.943296934373!2d37.61886107808325!3d55.75392027502043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54925712c6279%3A0x640a96a56b3a4a5!2s%D0%9C%D0%BE%D1%81%D0%BAA%D0%BE%D0%B2%D1%81%D0%BAA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BAA%D1%82%20%D0%B3%D0%B0%D0%B7%D0%BE%D0%B1%D0%B5%D1%82%D0%BE%D0%BD%D0%B0%20%D0%B2%20%D0%9C%D0%BE%D1%81%D0%BAA%D0%BAA%D0%B2%D0%B5%20%D0%9C%D0%BE%D1%81%D0%BAA%D0%BAA%D0%B2%D0%B5!5e0!3m2!1sru!2sru!4v1693394639180!5m2!1sru!2sru" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </center>
+        </section>
+    </main>
+
+    <footer>
+        <center> <p>&copy; 2023 Газобетон - Стройте с умом! Все права защищены.</p> </center>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
